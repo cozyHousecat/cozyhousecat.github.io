@@ -1,0 +1,53 @@
+# hugo.toml
+baseURL = 'https://cozyhousecat.github.io/'
+locale = 'en-gb'
+defaultContentLanguage = 'en'
+title = 'cozyHousecat'
+theme = 're-terminal'
+
+[pagination]
+  pagerSize = 5
+
+[caches.images]
+  dir = ':cacheDir/images'
+
+[markup.highlight]
+  noClasses = false
+
+[params]
+  contentTypeName      = 'posts'
+  themeColor           = 'red'      # orange | blue | red | green | pink | paper
+  showMenuItems        = 3          # rest collapse behind "Show more"
+  showLanguageSelector = false
+  fullWidthTheme       = false
+  centerTheme          = false
+  autoCover            = true
+  readingTime          = true
+
+  subtitle       = 'I log out sometimes'
+  keywords       = ''
+  menuMore       = 'Show more'
+  readMore       = 'Read more'
+  readOtherPosts = 'Read other posts'
+
+  [params.logo]
+    logoText     = 'cozyHousecat'
+    logoHomeLink = '/'
+
+[[menu.main]]
+  identifier = 'about'
+  name       = 'About'
+  url        = '/about'
+  weight     = 10
+
+[[menu.main]]
+  identifier = 'contact'
+  name       = 'Contact'
+  url        = '/contact'
+  weight     = 20
+
+[[menu.main]]
+  identifier = 'links'
+  name       = 'Links'
+  url        = '/links'
+  weight     = 40

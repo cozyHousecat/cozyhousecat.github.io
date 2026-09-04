@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Publish Hugo site",
+      "type": "shell",
+      "command": "rm -rf .hugo-publish && hugo --minify --baseURL 'https://cozyhousecat.github.io/' --destination .hugo-publish && rm -rf public && cp -a .hugo-publish/. . && rm -rf .hugo-publish",
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      }
+    }
+  ]
+}

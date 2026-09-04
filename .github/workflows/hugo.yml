@@ -22,23 +22,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: recursive
           fetch-depth: 0
-
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.165.0'
-          extended: true
 
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
-
-      - name: Upload artifact
+      - name: Upload generated site
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public

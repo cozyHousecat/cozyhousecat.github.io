@@ -16,7 +16,7 @@ theme = 're-terminal'
 
 [params]
   contentTypeName      = 'posts'
-  themeColor           = 'red'      # orange | blue | red | green | pink | paper
+  themeColor           = 'blue'      # orange | blue | red | green | pink | paper
   showMenuItems        = 3          # rest collapse behind "Show more"
   showLanguageSelector = false
   fullWidthTheme       = false
